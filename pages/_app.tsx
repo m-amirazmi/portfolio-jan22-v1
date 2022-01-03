@@ -34,7 +34,7 @@ function MyApp({ Component, pageProps, router }: AppProps) {
 			<Script src="https://kit.fontawesome.com/ce9a652be3.js" crossOrigin="anonymous" />
 			<MainLayout {...findPageInfo}>
 				<motion.div {...animatePage}>
-					<Component {...pageProps} />
+					<Component pageInfo={findPageInfo} {...pageProps} />
 				</motion.div>
 			</MainLayout>
 		</>
