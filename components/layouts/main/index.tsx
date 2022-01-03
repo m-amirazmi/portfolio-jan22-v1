@@ -47,9 +47,7 @@ export default function MainLayout({ icon, title, children }: Layout) {
 								</div>
 							</div>
 
-							<div className={styles.mainContentLayout}>
-								<div className={styles.mainContentContainer}>{children}</div>
-							</div>
+							<div className={styles.mainContentLayout}>{children}</div>
 						</div>
 						<div className={styles.rightContent}>
 							<div className={styles.rightContentContainer}>

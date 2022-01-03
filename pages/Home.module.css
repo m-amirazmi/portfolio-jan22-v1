@@ -39,6 +39,15 @@
 	height: 100%;
 }
 
+.mainContentContainer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 60px 20px;
+	height: 100%;
+}
+
 @media screen and (max-width: 579px) {
 	.title {
 		font-size: 28px;

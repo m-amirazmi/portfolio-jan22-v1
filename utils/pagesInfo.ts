@@ -1,4 +1,5 @@
 interface PageInfo {
+	id: number;
 	path: string;
 	name: string;
 	icon: string;
@@ -17,6 +18,7 @@ interface PageInfo {
 
 export const pagesInfo: PageInfo[] = [
 	{
+		id: 0,
 		path: "/",
 		name: "Home",
 		icon: "fas fa-home",
@@ -33,6 +35,7 @@ export const pagesInfo: PageInfo[] = [
 		showOnHome: false,
 	},
 	{
+		id: 1,
 		path: "/about",
 		name: "About Me",
 		icon: "fas fa-id-card",
@@ -49,6 +52,7 @@ export const pagesInfo: PageInfo[] = [
 		showOnHome: true,
 	},
 	{
+		id: 2,
 		path: "/resume",
 		name: "My Resume",
 		icon: "fas fa-newspaper",
@@ -65,6 +69,7 @@ export const pagesInfo: PageInfo[] = [
 		showOnHome: true,
 	},
 	{
+		id: 3,
 		path: "/portfolio",
 		name: "My Portfolio",
 		icon: "fas fa-toolbox",
@@ -81,6 +86,7 @@ export const pagesInfo: PageInfo[] = [
 		showOnHome: true,
 	},
 	{
+		id: 4,
 		path: "/contact",
 		name: "My Contact",
 		icon: "fas fa-envelope",

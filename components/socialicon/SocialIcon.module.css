@@ -24,7 +24,7 @@
 
 @media screen and (max-width: 579px) {
 	.container {
-		width: 47%;
+		width: 100%;
 		font-size: 16px;
 		padding: 12px 12px;
 	}

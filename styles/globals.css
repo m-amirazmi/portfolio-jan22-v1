@@ -40,3 +40,7 @@ a {
 	--primary: #1d976c;
 	--primary-light: #93f9b9;
 }
+
+.maincontainer {
+	width: 100%;
+}
