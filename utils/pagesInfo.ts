@@ -1,6 +1,6 @@
-import { PageInfo } from "./interfaces";
+import { PageInfoI } from "./interfaces";
 
-export const pagesInfo: PageInfo[] = [
+export const pagesInfo: PageInfoI[] = [
 	{
 		id: 0,
 		path: "/",
