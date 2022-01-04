@@ -159,7 +159,9 @@ export default function About({ pageInfo }: PageProps) {
 						<motion.div {...animateInfo} className={styles.infoContainer}>
 							{renderPersonalInfo()}
 						</motion.div>
-						<div className={styles.infoContainerMobile}>{renderPersonalInfoMobile}</div>
+						<motion.div {...animateInfo} className={styles.infoContainerMobile}>
+							{renderPersonalInfoMobile}
+						</motion.div>
 
 						<div style={{ display: "flex", marginBottom: "24px" }}>{renderSocialIcons}</div>
 
