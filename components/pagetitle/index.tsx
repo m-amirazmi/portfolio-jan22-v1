@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
 import { animateTitle } from "../../utils/animates";
-import { PageInfo } from "../../utils/interfaces";
+import { PageInfoI } from "../../utils/interfaces";
 import styles from "./PageTitle.module.css";
 
-export default function PageTitle({ title }: PageInfo) {
+export default function PageTitle({ title }: PageInfoI) {
 	return (
 		<div className={styles.titleContainer}>
 			<motion.h1 className={styles.title} {...animateTitle}>
