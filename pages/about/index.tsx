@@ -8,8 +8,12 @@ import { animateButton, animateInfo, animateSummary } from "../../utils/animates
 import { PagePropsI } from "../../utils/interfaces";
 import { socialInfo } from "../../utils/socialInfo";
 import styles from "./About.module.css";
+import { useRouter } from "next/router";
+import PageBack from "../../components/pageback";
 
 export default function About({ pageInfo }: PagePropsI) {
+	const { back } = useRouter();
+
 	const renderPersonalInfo = () => {
 		const positions: (string | undefined)[] = [];
 		personalInfo.forEach((p) => {
@@ -80,7 +84,8 @@ export default function About({ pageInfo }: PagePropsI) {
 		<>
 			<div className={styles.mainContentContainer}>
 				<PageTitle {...pageInfo} />
-				{renderPersonalInfoSection()}
+				<div style={{ marginBottom: "20px" }}>{renderPersonalInfoSection()}</div>
+				<PageBack />
 			</div>
 		</>
 	);
