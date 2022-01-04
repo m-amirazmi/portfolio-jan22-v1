@@ -17,9 +17,29 @@
 	font-size: 14px;
 }
 
-.container:hover {
+.container:hover,
+.containerCircle:hover {
 	background: #e0e5eb;
 	color: var(--primary);
+}
+
+.containerCircle {
+	width: 32px;
+	height: 32px;
+	font-size: 20px;
+	background: #fff;
+	border-radius: 4px;
+	color: var(--primary);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	gap: 8px;
+	padding: 20px 20px;
+	margin-right: 12px;
+	transition: all 0.25s ease-in-out;
+	border: 1px solid var(--primary);
+	border-radius: 50%;
 }
 
 @media screen and (max-width: 579px) {

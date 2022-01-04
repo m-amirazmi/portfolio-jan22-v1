@@ -51,7 +51,7 @@ export default function MainLayout({ icon, title, children }: Layout) {
 						</div>
 						<div className={styles.rightContent}>
 							<div className={styles.rightContentContainer}>
-								<Image layout="fill" objectFit="cover" src="/images/cover.jpeg" alt="placeholder" />
+								<Image layout="fill" objectFit="cover" src="/images/nikah.jpeg" alt="placeholder" />
 							</div>
 						</div>
 					</div>

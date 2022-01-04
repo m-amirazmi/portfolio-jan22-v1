@@ -16,6 +16,7 @@
 .subContainer {
 	display: flex;
 	height: 100%;
+	box-shadow: 0 1px 20px 0 rgb(69 90 100 / 10%);
 }
 
 .mainContent {

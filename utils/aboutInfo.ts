@@ -55,3 +55,18 @@ export const personalInfo: PersonalInfo[] = [
 		position: "right",
 	},
 ];
+
+// export const summary =
+// 	"I am a UI/UX Designer & Web Developer from Silicon Valley, USA. I am very passionate and dedicated to my work. I have 5 years more work experience. And enjoy working in a team or individual.";
+
+const today = new Date().getTime();
+// const currentMonth = today.getMonth();
+// const currentYear = today.getFullYear();
+
+const duration = today - 1592182800000;
+const differences = duration / (1000 * 2629743 * 12);
+const year = parseInt(differences.toString());
+const month = parseInt(((differences - year) * 12).toString());
+const durationText = month > 1 ? `${year} year${year > 1 ? "s" : ""} and ${month} month${month > 1 ? "s" : ""}` : `${year} year${year > 1 && "s"}`;
+
+export const summary = `I am a Frontend Web Developer from Kuala Lumpur, Malaysia. I am very passionate and dedicated to my work. I love exploring new front end tech to improve my knowledge to the next level. I have ${durationText} professional work experiences in startup and ecommerce company. I also enjoy working in a team and individual.`;
