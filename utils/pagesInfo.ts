@@ -1,20 +1,4 @@
-interface PageInfo {
-	id: number;
-	path: string;
-	name: string;
-	icon: string;
-	showOnHome: boolean;
-	title?: {
-		text: {
-			primary: string;
-			secondary: string;
-		};
-		color: {
-			primary: string;
-			secondary: string;
-		};
-	};
-}
+import { PageInfo } from "./interfaces";
 
 export const pagesInfo: PageInfo[] = [
 	{

@@ -1,0 +1,61 @@
+.sectionContainer {
+	align-self: flex-start;
+	width: 100%;
+	position: relative;
+}
+
+.subtitle {
+	margin-bottom: 24px;
+}
+
+.subtitle h6 {
+	font-size: 20px;
+	font-weight: 300;
+	color: #666;
+	margin-bottom: 12px;
+}
+
+.subtitle div {
+	height: 4px;
+	width: 32px;
+	border-radius: 24px;
+}
+
+.sectionContent {
+	background: #fff;
+	padding: 40px;
+	border-radius: 4px;
+	width: 100%;
+}
+
+.back {
+	position: absolute;
+	right: 0;
+	bottom: -36px;
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	font-size: 14px;
+	color: #666;
+	justify-content: end;
+	cursor: pointer;
+	transition: all 0.25s ease-in-out;
+}
+
+.back:hover {
+	color: var(--primary);
+}
+
+.back i {
+	font-size: 24px;
+	margin-top: 2px;
+}
+
+@media screen and (max-width: 579px) {
+	.subtitle {
+		font-size: 16px;
+	}
+	.sectionContent {
+		padding: 20px;
+	}
+}

@@ -1,0 +1,24 @@
+.titleContainer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 24px;
+}
+
+.title {
+	color: #666;
+	font-size: 42px;
+	margin-bottom: 12px;
+	text-align: center;
+}
+
+.title span:nth-child(2) {
+	color: var(--primary);
+}
+
+@media screen and (max-width: 579px) {
+	.title {
+		font-size: 28px;
+	}
+}

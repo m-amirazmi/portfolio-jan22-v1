@@ -1,44 +1,12 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
+import { animateNavCard } from "../../utils/animates";
+import { HomeNavI } from "../../utils/interfaces";
 import styles from "./HomeNav.module.css";
 
-interface HomeNav {
-	id: number;
-	path: string;
-	icon?: string;
-	title?: {
-		text: {
-			primary: string;
-			secondary: string;
-		};
-		color: {
-			primary: string;
-			secondary: string;
-		};
-	};
-}
-
-export default function HomeNav({ title, icon, path, id }: HomeNav) {
-	const animateNavCard = {
-		initial: "hidden",
-		animate: "visible",
-		variants: {
-			hidden: {
-				scale: 0.9,
-				opacity: 0,
-			},
-			visible: {
-				scale: 1,
-				opacity: 1,
-				transition: {
-					delay: id / 20,
-				},
-			},
-		},
-	};
-
+export default function HomeNavigation({ title, icon, path, id }: HomeNavI) {
 	return (
-		<motion.div className={styles.container} {...animateNavCard}>
+		<motion.div className={styles.container} {...animateNavCard(id)}>
 			<div className={styles.subcontainer}>
 				<Link href={path}>
 					<a className={styles.layout}>

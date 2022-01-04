@@ -1,24 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
+import { LayoutI } from "../../../utils/interfaces";
 import styles from "./MainLayout.module.css";
 
-interface Layout {
-	icon?: string;
-	title?: {
-		text: {
-			primary: string;
-			secondary: string;
-		};
-		color: {
-			primary: string;
-			secondary: string;
-		};
-	};
-	children?: JSX.Element;
-}
-
-export default function MainLayout({ icon, title, children }: Layout) {
+export default function MainLayout({ icon, title, children }: LayoutI) {
 	const { pathname } = useRouter();
 	return (
 		<div className={styles.mainContainer}>
