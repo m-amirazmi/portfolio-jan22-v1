@@ -39,12 +39,12 @@ export default function About({ pageInfo }: PagePropsI) {
 	};
 
 	const renderPersonalInfoMobile = personalInfo.map((p) => (
-		<div key={p.id} className={styles.info}>
+		<div key={p.id} className={styles.infoMobile}>
 			<i className="fas fa-angle-double-right"></i>
-			<p>
-				<span>{p.name} -</span>
-				<span> {p.value}</span>
-			</p>
+			<div>
+				<p>{p.name}</p>
+				<p> {p.value}</p>
+			</div>
 		</div>
 	));
 

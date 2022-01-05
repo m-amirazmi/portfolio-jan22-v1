@@ -15,7 +15,7 @@
 }
 
 .summary p {
-	margin-bottom: 12px;
+	margin-bottom: 16px;
 }
 
 .infoContainer {
@@ -41,12 +41,31 @@
 	margin-bottom: 32px;
 }
 
-.info i {
+.infoMobile {
+	display: flex;
+	font-size: 16px;
+	align-items: center;
+	gap: 12px;
+	margin-bottom: 32px;
+}
+
+.info i,
+.infoMobile i {
 	font-size: 18px;
 	color: var(--primary);
 }
 
-.info p span:last-child {
+.info p span:last-child,
+.infoMobile div p:last-child {
+	color: #333;
+}
+
+.info p span:first-child {
+	color: #666;
+}
+
+.infoMobile div p:first-child {
+	font-size: 12px;
 	color: #666;
 }
 
