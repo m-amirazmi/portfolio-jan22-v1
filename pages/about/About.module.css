@@ -75,7 +75,7 @@
 	font-size: 16px;
 	padding: 16px 24px;
 	border: none;
-	background: #51bf92;
+	background: var(--primary-med);
 	color: #fff;
 	border-radius: 4px;
 	cursor: pointer;

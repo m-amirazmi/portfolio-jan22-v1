@@ -38,8 +38,9 @@ a {
 }
 
 :root {
-	--primary: #1d976c;
-	--primary-light: #93f9b9;
+	--primary: #008080;
+	--primary-light: #89d5d2;
+	--primary-med: #35b5ac;
 }
 
 .maincontainer {
