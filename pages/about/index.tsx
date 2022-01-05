@@ -51,9 +51,10 @@ export default function About({ pageInfo }: PagePropsI) {
 	const renderPersonalInfoSection = () => (
 		<Section pageInfo={pageInfo} name="My Personal Info">
 			<div>
-				<motion.p {...animateSummary} className={styles.summary}>
-					{summary}
-				</motion.p>
+				<motion.div {...animateSummary} className={styles.summary}>
+					<p>{summary.text1}</p>
+					<p>{summary.text2}</p>
+				</motion.div>
 
 				<motion.div {...animateInfo} className={styles.infoContainer}>
 					{renderPersonalInfo()}

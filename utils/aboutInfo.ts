@@ -69,4 +69,7 @@ const year = parseInt(differences.toString());
 const month = parseInt(((differences - year) * 12).toString());
 const durationText = month > 1 ? `${year} year${year > 1 ? "s" : ""} and ${month} month${month > 1 ? "s" : ""}` : `${year} year${year > 1 && "s"}`;
 
-export const summary = `I am a Frontend Web Developer from Kuala Lumpur, Malaysia. I am very passionate and dedicated to my work. I love exploring new front end tech to improve my knowledge to the next level. I have ${durationText} professional work experiences in startup and ecommerce company. I also enjoy working in a team and individual.`;
+export const summary = {
+	text1: "I am a Frontend Web Developer from Kuala Lumpur, Malaysia. I am very passionate and dedicated to my work. I love exploring new front end tech to improve my knowledge to the next level.",
+	text2: `I have ${durationText} professional work experiences in startup and ecommerce company. I also enjoy working in a team and individual.`,
+};

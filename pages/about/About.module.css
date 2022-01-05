@@ -8,10 +8,14 @@
 }
 
 .summary {
-	font-size: 14px;
+	font-size: 16px;
 	line-height: 1.75;
 	max-width: 100%;
 	margin-bottom: 40px;
+}
+
+.summary p {
+	margin-bottom: 12px;
 }
 
 .infoContainer {
@@ -31,7 +35,7 @@
 
 .info {
 	display: flex;
-	font-size: 14px;
+	font-size: 16px;
 	align-items: end;
 	gap: 12px;
 	margin-bottom: 32px;
@@ -49,7 +53,7 @@
 .button {
 	display: flex;
 	gap: 12px;
-	font-size: 14px;
+	font-size: 16px;
 	padding: 16px 24px;
 	border: none;
 	background: #51bf92;
