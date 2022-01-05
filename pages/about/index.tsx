@@ -12,8 +12,6 @@ import { useRouter } from "next/router";
 import PageBack from "../../components/pageback";
 
 export default function About({ pageInfo }: PagePropsI) {
-	const { back } = useRouter();
-
 	const renderPersonalInfo = () => {
 		const positions: (string | undefined)[] = [];
 		personalInfo.forEach((p) => {
