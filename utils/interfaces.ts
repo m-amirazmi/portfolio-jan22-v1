@@ -62,3 +62,30 @@ export interface SocialIconI {
 	name: string;
 	style?: string;
 }
+
+export interface WorkTasksI {
+	tid?: string;
+	text?: string;
+	ex?: string;
+}
+
+export interface WorkExpI {
+	employmentDate: {
+		start: string;
+		end: string;
+	};
+	id?: string;
+	company: string;
+	role: string;
+	location: string;
+	summary: {
+		text1?: string;
+		text2?: string;
+	};
+	tasks: WorkTasksI[];
+}
+
+export interface WorkI {
+	summary: string;
+	jobs: WorkExpI[];
+}

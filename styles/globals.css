@@ -39,7 +39,7 @@ a {
 }
 
 :root {
-	--primary: #008080;
+	--primary: rgb(0, 128, 128);
 	--primary-light: #89d5d2;
 	--primary-med: #35b5ac;
 }
