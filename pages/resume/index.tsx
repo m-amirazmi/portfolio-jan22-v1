@@ -11,7 +11,7 @@ export default function Resume({ pageInfo }: PagePropsI) {
 	const renderExperience = () => (
 		<Section pageInfo={pageInfo} name="My Work Experiences">
 			<div>
-				<p style={{ marginBottom: "40px" }}>{experiences.summary}</p>
+				<p className={styles.workExperienceSummary}>{experiences.summary}</p>
 				{experiences.jobs.map((exp) => (
 					<WorkExp key={exp.id} {...exp} />
 				))}
