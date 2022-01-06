@@ -9,6 +9,19 @@
 .workExperienceSummary {
 	margin-bottom: 40px;
 }
+
+.section {
+	width: 100%;
+}
+
+.sections > div {
+	margin-bottom: 60px;
+}
+
+.sections > div:nth-last-child(1) {
+	margin-bottom: 24px;
+}
+
 @media screen and (max-width: 579px) {
 	.mainContentContainer {
 		padding: 60px 28px;

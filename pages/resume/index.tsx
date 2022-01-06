@@ -19,11 +19,25 @@ export default function Resume({ pageInfo }: PagePropsI) {
 		</Section>
 	);
 
+	const renderEducations = () => (
+		<Section pageInfo={pageInfo} name="My Educational Background">
+			<div>
+				<p className={styles.workExperienceSummary}>{experiences.summary}</p>
+				{experiences.jobs.map((exp) => (
+					<WorkExp key={exp.id} {...exp} />
+				))}
+			</div>
+		</Section>
+	);
+
 	return (
 		<>
 			<div className={styles.mainContentContainer}>
 				<PageTitle {...pageInfo} />
-				<div style={{ marginBottom: "20px", width: "100%" }}>{renderExperience()}</div>
+				<div className={styles.sections}>
+					<div className={styles.section}>{renderExperience()}</div>
+					<div className={styles.section}>{renderEducations()}</div>
+				</div>
 				<PageBack />
 			</div>
 		</>
