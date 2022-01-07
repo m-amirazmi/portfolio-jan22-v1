@@ -91,11 +91,16 @@
 	.content {
 		font-size: 14px;
 	}
+	.container {
+		padding: 20px 0px;
+	}
 	.container:first-child {
 		padding-right: 0px;
+		padding-top: 0px;
 	}
 	.container:last-child {
 		padding-left: 0px;
+		padding-bottom: 0px;
 	}
 }
 
