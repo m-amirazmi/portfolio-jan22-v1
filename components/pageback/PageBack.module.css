@@ -4,7 +4,7 @@
 	gap: 12px;
 	font-size: 14px;
 	color: #666;
-	justify-content: end;
+	justify-content: flex-end;
 	cursor: pointer;
 	transition: all 0.25s ease-in-out;
 }

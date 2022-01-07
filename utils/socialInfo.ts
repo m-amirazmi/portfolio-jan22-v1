@@ -30,7 +30,7 @@ export const socialInfo = [
 		link: "mailto:m.amirazmi@hotmail.com",
 	},
 	{
-		id: "s05",
+		id: "s06",
 		name: "Download CV",
 		icon: "fas fa-file-pdf",
 		link: "/documents/resume.pdf",

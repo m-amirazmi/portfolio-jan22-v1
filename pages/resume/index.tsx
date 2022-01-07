@@ -10,6 +10,9 @@ import Cert from "../../components/certificate";
 import Skill from "../../components/skill";
 import { socialInfo } from "../../utils/socialInfo";
 import SocialIcon from "../../components/socialicon";
+import { useEffect, useRef, useState } from "react";
+import { motion } from "framer-motion";
+import { animateReveal } from "../../utils/animates";
 
 export default function Resume({ pageInfo }: PagePropsI) {
 	const renderExperience = (
@@ -60,10 +63,18 @@ export default function Resume({ pageInfo }: PagePropsI) {
 				))}
 			</div>
 			<div className={styles.sections}>
-				<div className={styles.section}>{renderSkills}</div>
-				<div className={styles.section}>{renderExperience}</div>
-				<div className={styles.section}>{renderEducations}</div>
-				<div className={styles.section}>{renderCertificates}</div>
+				<motion.div {...animateReveal} className={styles.section}>
+					{renderSkills}
+				</motion.div>
+				<motion.div {...animateReveal} className={styles.section}>
+					{renderExperience}
+				</motion.div>
+				<motion.div {...animateReveal} className={styles.section}>
+					{renderEducations}
+				</motion.div>
+				<motion.div {...animateReveal} className={styles.section}>
+					{renderCertificates}
+				</motion.div>
 			</div>
 			<PageBack />
 		</div>
