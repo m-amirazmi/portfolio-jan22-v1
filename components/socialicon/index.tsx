@@ -4,7 +4,7 @@ import { animateIcon } from "../../utils/animates";
 import { SocialIconI } from "../../utils/interfaces";
 import styles from "./SocialIcon.module.css";
 
-export default function SocialIcon({ icon, link, name, style }: SocialIconI) {
+export default function SocialIcon({ icon, link, name, style, expand }: SocialIconI) {
 	const renderIcon = () => {
 		if (style === "circle")
 			return (
@@ -15,7 +15,7 @@ export default function SocialIcon({ icon, link, name, style }: SocialIconI) {
 		return (
 			<a className={styles.container} target="_blank">
 				<i className={icon}></i>
-				<span>{name}</span>
+				{expand && <span>{name}</span>}
 			</a>
 		);
 	};

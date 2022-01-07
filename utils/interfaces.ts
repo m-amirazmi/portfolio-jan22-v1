@@ -63,6 +63,7 @@ export interface SocialIconI {
 	link: string;
 	name: string;
 	style?: string;
+	expand?: boolean;
 }
 
 export interface WorkTasksI {
@@ -119,4 +120,15 @@ export interface CertI {
 export interface CertsI {
 	summary: string;
 	certs: CertI[];
+}
+
+export interface SkillI {
+	id: string;
+	name: string;
+	collections: string[];
+}
+
+export interface SkillsI {
+	summary: string;
+	items: SkillI[];
 }

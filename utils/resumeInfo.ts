@@ -1,4 +1,4 @@
-import { CertsI, EduI, WorkI } from "./interfaces";
+import { CertsI, EduI, SkillsI, WorkI } from "./interfaces";
 
 export const experiences: WorkI = {
 	summary: "I have started working professionally as Frontend Developer since Jun 2020. From knowing nothing about Web Development until becoming a full fledged Frontend Developer.",
@@ -112,6 +112,22 @@ export const certificates: CertsI = {
 			summary: "Learned on designing a software based on Object Oriented Design.",
 			date: "Jun 2021",
 			cert: "/documents/oodcert.pdf",
+		},
+	],
+};
+
+export const skills: SkillsI = {
+	summary: "Throughout my web development journey, I have focused more into frontend or UI/UX development. My main tech stack is revolving around ReactJS.",
+	items: [
+		{
+			id: "1",
+			name: "Web Development",
+			collections: ["HTML/CSS", "Javascript", "ReactJS", "NextJS", "Typescript", "Framer Motion", "NodeJS", "ExpressJS", "MongoDB"],
+		},
+		{
+			id: "3",
+			name: "Tools",
+			collections: ["GIT", "Figma", "GitLab/GitHub"],
 		},
 	],
 };

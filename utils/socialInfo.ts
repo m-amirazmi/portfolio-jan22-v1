@@ -17,4 +17,23 @@ export const socialInfo = [
 		icon: "fab fa-github-alt",
 		link: "https://github.com/m-amirazmi",
 	},
+	{
+		id: "s04",
+		name: "WhatsApp",
+		icon: "fab fa-whatsapp",
+		link: "tel:601119821105",
+	},
+	{
+		id: "s05",
+		name: "Email",
+		icon: "fas fa-envelope",
+		link: "mailto:m.amirazmi@hotmail.com",
+	},
+	{
+		id: "s05",
+		name: "Download CV",
+		icon: "fas fa-file-pdf",
+		link: "/documents/resume.pdf",
+		expand: true,
+	},
 ];

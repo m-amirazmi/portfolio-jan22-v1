@@ -60,7 +60,7 @@ export default function About({ pageInfo }: PagePropsI) {
 				<motion.div {...animateInfo} className={styles.infoContainerMobile}>
 					{renderPersonalInfoMobile}
 				</motion.div>
-
+				{/* 
 				<div style={{ display: "flex", marginBottom: "24px" }}>
 					{socialInfo.map((s) => (
 						<SocialIcon key={s.id} style="circle" {...s} />
@@ -74,7 +74,7 @@ export default function About({ pageInfo }: PagePropsI) {
 							<span>Download CV</span>
 						</a>
 					</Link>
-				</motion.div>
+				</motion.div> */}
 			</div>
 		</Section>
 	);
@@ -83,6 +83,11 @@ export default function About({ pageInfo }: PagePropsI) {
 		<>
 			<div className={styles.mainContentContainer}>
 				<PageTitle {...pageInfo} />
+				<div className={styles.socialIcons}>
+					{socialInfo.map((s) => (
+						<SocialIcon key={s.id} {...s} />
+					))}
+				</div>
 				<div style={{ marginBottom: "20px" }}>{renderPersonalInfoSection()}</div>
 				<PageBack />
 			</div>
