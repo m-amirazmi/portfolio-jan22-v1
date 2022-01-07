@@ -1,3 +1,5 @@
+import { ReactNode } from "react";
+
 export interface PageInfoI {
 	id: number;
 	path: string;
@@ -18,7 +20,7 @@ export interface PageInfoI {
 
 export interface PageSectionI {
 	pageInfo: PageInfoI;
-	children: JSX.Element;
+	children: ReactNode;
 	name: string;
 }
 
@@ -53,7 +55,7 @@ export interface LayoutI {
 			secondary: string;
 		};
 	};
-	children?: JSX.Element;
+	children?: ReactNode;
 }
 
 export interface SocialIconI {
@@ -103,4 +105,18 @@ export interface SchoolI {
 export interface EduI {
 	summary: string;
 	schools: SchoolI[];
+}
+
+export interface CertI {
+	id: string;
+	course: string;
+	organizer: string;
+	summary: string;
+	date: string;
+	cert: string;
+}
+
+export interface CertsI {
+	summary: string;
+	certs: CertI[];
 }

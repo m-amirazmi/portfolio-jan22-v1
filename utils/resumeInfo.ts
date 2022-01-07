@@ -1,12 +1,12 @@
-import { EduI, WorkI } from "./interfaces";
+import { CertsI, EduI, WorkI } from "./interfaces";
 
 export const experiences: WorkI = {
-	summary: "I have started working professionally as Frontend Developer since June 2020. From knowing nothing about Web Development until becoming a full fledged Frontend Developer.",
+	summary: "I have started working professionally as Frontend Developer since Jun 2020. From knowing nothing about Web Development until becoming a full fledged Frontend Developer.",
 	jobs: [
 		{
 			id: "1",
 			employmentDate: {
-				start: "Sept 2021",
+				start: "Sep 2021",
 				end: "Present",
 			},
 			company: "Fashion Valet Sdn Bhd",
@@ -38,8 +38,8 @@ export const experiences: WorkI = {
 		{
 			id: "2",
 			employmentDate: {
-				start: "June 2020",
-				end: "June 2021",
+				start: "Jun 2020",
+				end: "Jun 2021",
 			},
 			company: "REKA Studios",
 			role: "Front End Web Developer",
@@ -79,7 +79,7 @@ export const educations: EduI = {
 			name: "University Kuala Lumpur British Malaysian Institute",
 			grade: "3.06",
 			start: "Jan 2015",
-			end: "June 2019",
+			end: "Jun 2019",
 			cert: "/documents/bachelor.pdf",
 		},
 		{
@@ -90,6 +90,28 @@ export const educations: EduI = {
 			start: "Jan 2013",
 			end: "Dec 2015",
 			cert: "/documents/diploma.pdf",
+		},
+	],
+};
+
+export const certificates: CertsI = {
+	summary: "Aside of my bachelor degree and diploma, I also take some Web Development and Programming courses to improve my skills.",
+	certs: [
+		{
+			course: "Combat of Web Application - Hacker vs. Developer",
+			id: "1",
+			organizer: "Condition Zebra Online Training Centre",
+			summary: "Learned about web security, OWASP and a little bit about BurpSuite.",
+			date: "Jan 2021",
+			cert: "/documents/thecombat.pdf",
+		},
+		{
+			course: "Programming Foundations: Object-Oriented Design",
+			id: "3",
+			organizer: "LinkedIn Learning",
+			summary: "Learned on designing a software based on Object Oriented Design.",
+			date: "Jun 2021",
+			cert: "/documents/oodcert.pdf",
 		},
 	],
 };

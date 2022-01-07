@@ -22,6 +22,48 @@
 	margin-bottom: 24px;
 }
 
+.certs {
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+	margin-top: 24px;
+}
+
+.cert {
+	margin-bottom: 8px;
+	display: flex;
+	align-items: flex-start;
+	gap: 12px;
+}
+
+.cert i {
+	margin-top: 6px;
+	color: var(--primary);
+	font-size: 7px;
+}
+
+.certClass,
+.certDate,
+.certOrganizer,
+.certSummary {
+	display: block;
+}
+
+.certClass {
+	font-weight: 600;
+	color: var(--primary);
+}
+
+.certOrganizer {
+	font-size: 14px;
+	color: #666;
+}
+
+.certSummary {
+	font-size: 14px;
+	font-style: italic;
+}
+
 @media screen and (max-width: 579px) {
 	.mainContentContainer {
 		padding: 60px 28px;
