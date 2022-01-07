@@ -60,37 +60,20 @@ export default function About({ pageInfo }: PagePropsI) {
 				<motion.div {...animateInfo} className={styles.infoContainerMobile}>
 					{renderPersonalInfoMobile}
 				</motion.div>
-				{/* 
-				<div style={{ display: "flex", marginBottom: "24px" }}>
-					{socialInfo.map((s) => (
-						<SocialIcon key={s.id} style="circle" {...s} />
-					))}
-				</div>
-
-				<motion.div {...animateButton} className={styles.buttonContainer}>
-					<Link href="/documents/resume.pdf">
-						<a className={styles.button} target="_blank">
-							<i className="fas fa-file-pdf"></i>
-							<span>Download CV</span>
-						</a>
-					</Link>
-				</motion.div> */}
 			</div>
 		</Section>
 	);
 
 	return (
-		<>
-			<div className={styles.mainContentContainer}>
-				<PageTitle {...pageInfo} />
-				<div className={styles.socialIcons}>
-					{socialInfo.map((s) => (
-						<SocialIcon key={s.id} {...s} />
-					))}
-				</div>
-				<div style={{ marginBottom: "20px" }}>{renderPersonalInfoSection()}</div>
-				<PageBack />
+		<div className={styles.mainContentContainer}>
+			<PageTitle {...pageInfo} />
+			<div className={styles.socialIcons}>
+				{socialInfo.map((s) => (
+					<SocialIcon key={s.id} {...s} />
+				))}
 			</div>
-		</>
+			<div style={{ marginBottom: "20px" }}>{renderPersonalInfoSection()}</div>
+			<PageBack />
+		</div>
 	);
 }

@@ -52,22 +52,20 @@ export default function Resume({ pageInfo }: PagePropsI) {
 	);
 
 	return (
-		<>
-			<div className={styles.mainContentContainer}>
-				<PageTitle {...pageInfo} />
-				<div className={styles.socialIcons}>
-					{socialInfo.map((s) => (
-						<SocialIcon key={s.id} {...s} />
-					))}
-				</div>
-				<div className={styles.sections}>
-					<div className={styles.section}>{renderSkills}</div>
-					<div className={styles.section}>{renderExperience}</div>
-					<div className={styles.section}>{renderEducations}</div>
-					<div className={styles.section}>{renderCertificates}</div>
-				</div>
-				<PageBack />
+		<div className={styles.mainContentContainer}>
+			<PageTitle {...pageInfo} />
+			<div className={styles.socialIcons}>
+				{socialInfo.map((s) => (
+					<SocialIcon key={s.id} {...s} />
+				))}
 			</div>
-		</>
+			<div className={styles.sections}>
+				<div className={styles.section}>{renderSkills}</div>
+				<div className={styles.section}>{renderExperience}</div>
+				<div className={styles.section}>{renderEducations}</div>
+				<div className={styles.section}>{renderCertificates}</div>
+			</div>
+			<PageBack />
+		</div>
 	);
 }
