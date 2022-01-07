@@ -8,11 +8,7 @@ export default function Education({ course, name, grade, start, end, cert }: Sch
 			<div className={styles.education}>
 				<p className={styles.schoolName}>{name}</p>
 				<p className={styles.startend}>
-					<span>
-						{start} - {end}
-					</span>
-					<span>|</span>
-					<span>CGPA {grade}</span>
+					{start} - {end} | CGPA {grade}
 				</p>
 			</div>
 			<div className={styles.content}>
