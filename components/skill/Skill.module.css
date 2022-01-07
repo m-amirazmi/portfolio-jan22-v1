@@ -1,6 +1,7 @@
 .container {
 	height: inherit;
 	padding: 12px;
+	padding-top: 0px;
 }
 
 .container:first-child {
