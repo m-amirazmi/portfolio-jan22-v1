@@ -1,6 +1,15 @@
 .container {
-	width: 48%;
+	width: 50%;
 	height: inherit;
+	padding: 12px;
+}
+
+.container:first-child {
+	padding-left: 0px;
+}
+
+.container:last-child {
+	padding-right: 0px;
 }
 
 .subcontainer {

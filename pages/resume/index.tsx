@@ -32,7 +32,7 @@ export default function Resume({ pageInfo }: PagePropsI) {
 	const renderCertificates = (
 		<Section pageInfo={pageInfo} name="My Additional Certificates">
 			<p className={styles.workExperienceSummary}>{certificates.summary}</p>
-			<div style={{ width: "100%", display: "flex", flexWrap: "wrap", gap: "24px" }}>
+			<div style={{ width: "100%", display: "flex", flexWrap: "wrap" }}>
 				{certificates.certs.map((cert) => (
 					<Cert key={cert.id} {...cert} />
 				))}
