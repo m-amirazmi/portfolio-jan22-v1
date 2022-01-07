@@ -4,11 +4,10 @@ import PageTitle from "../../components/pagetitle";
 import Section from "../../components/section";
 import SocialIcon from "../../components/socialicon";
 import { personalInfo, summary } from "../../utils/aboutInfo";
-import { animateButton, animateInfo, animateSummary } from "../../utils/animates";
+import { animateInfo } from "../../utils/animates";
 import { PagePropsI } from "../../utils/interfaces";
 import { socialInfo } from "../../utils/socialInfo";
 import styles from "./About.module.css";
-import { useRouter } from "next/router";
 import PageBack from "../../components/pageback";
 
 export default function About({ pageInfo }: PagePropsI) {
@@ -49,17 +48,13 @@ export default function About({ pageInfo }: PagePropsI) {
 	const renderPersonalInfoSection = () => (
 		<Section pageInfo={pageInfo} name="My Personal Info">
 			<div>
-				<motion.div {...animateSummary} className={styles.summary}>
+				<div className={styles.summary}>
 					<p>{summary.text1}</p>
 					<p>{summary.text2}</p>
-				</motion.div>
+				</div>
 
-				<motion.div {...animateInfo} className={styles.infoContainer}>
-					{renderPersonalInfo()}
-				</motion.div>
-				<motion.div {...animateInfo} className={styles.infoContainerMobile}>
-					{renderPersonalInfoMobile}
-				</motion.div>
+				<div className={styles.infoContainer}>{renderPersonalInfo()}</div>
+				<div className={styles.infoContainerMobile}>{renderPersonalInfoMobile}</div>
 			</div>
 		</Section>
 	);
@@ -72,7 +67,9 @@ export default function About({ pageInfo }: PagePropsI) {
 					<SocialIcon key={s.id} {...s} />
 				))}
 			</div>
-			<div style={{ marginBottom: "20px" }}>{renderPersonalInfoSection()}</div>
+			<motion.div {...animateInfo} style={{ marginBottom: "20px" }}>
+				{renderPersonalInfoSection()}
+			</motion.div>
 			<PageBack />
 		</div>
 	);
