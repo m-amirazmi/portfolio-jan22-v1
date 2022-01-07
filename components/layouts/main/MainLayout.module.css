@@ -111,14 +111,14 @@
 
 @media screen and (max-width: 579px) {
 	.container {
-		padding: 16px;
+		padding: 0px;
 	}
 	.sideContent {
 		width: 10%;
 	}
 	.sideContentTitle {
 		font-size: 12px;
-		margin: 0px;
+		margin-bottom: 20px;
 	}
 	.sideContentIcon,
 	.backIcon {
