@@ -71,13 +71,13 @@ export const pagesInfo: PageInfoI[] = [
 	},
 	{
 		id: 4,
-		path: "/contact",
-		name: "My Contact",
-		icon: "fas fa-envelope",
+		path: "/blogs",
+		name: "My Blogs",
+		icon: "fas fa-keyboard",
 		title: {
 			text: {
 				primary: "MY",
-				secondary: "CONTACT",
+				secondary: "BLOGS",
 			},
 			color: {
 				primary: "#666",

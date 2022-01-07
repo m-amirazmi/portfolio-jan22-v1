@@ -40,7 +40,7 @@ a {
 
 :root {
 	--primary: rgb(0, 128, 128);
-	--primary-light: #89d5d2;
+	--primary-light: rgb(137, 213, 210);
 	--primary-med: #35b5ac;
 }
 

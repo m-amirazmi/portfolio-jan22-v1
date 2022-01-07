@@ -15,7 +15,7 @@ export default function Skill({ name, collections }: SkillI) {
 	});
 
 	return (
-		<div className={styles.container} style={{ width: innerWidth > 1080 ? (collections.length > 4 ? "66%" : "33%") : "100%" }}>
+		<div className={styles.container} style={{ width: innerWidth > 1080 ? (collections.length > 5 ? "66%" : "33%") : "100%" }}>
 			<div className={styles.subcontainer}>
 				<div className={styles.skill}>
 					<p className={styles.skillTitle}>{name}</p>

@@ -122,12 +122,12 @@ export const skills: SkillsI = {
 		{
 			id: "1",
 			name: "Web Development",
-			collections: ["HTML/CSS", "Javascript", "ReactJS", "NextJS", "Typescript", "Framer Motion", "NodeJS", "ExpressJS", "MongoDB"],
+			collections: ["HTML/CSS", "Javascript", "ReactJS", "NextJS", "Bootstrap 5", "TailwindCSS", "Typescript", "Framer Motion", "NodeJS", "ExpressJS", "MongoDB"],
 		},
 		{
 			id: "3",
 			name: "Tools",
-			collections: ["GIT", "Figma", "GitLab/GitHub"],
+			collections: ["GIT", "Figma", "GitLab/GitHub", "Notion", "Trello"],
 		},
 	],
 };

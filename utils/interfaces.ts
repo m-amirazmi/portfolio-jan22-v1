@@ -26,6 +26,7 @@ export interface PageSectionI {
 
 export interface PagePropsI {
 	pageInfo: PageInfoI;
+	response?: [];
 }
 
 export interface HomeNavI {
