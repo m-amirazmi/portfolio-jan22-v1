@@ -1,0 +1,109 @@
+.container {
+	border: 1px solid #eff3f7;
+	border-radius: 8px;
+	margin-bottom: 40px;
+}
+
+.container:last-child {
+	margin-bottom: 0px;
+}
+
+.education {
+	background: #eff3f7;
+	color: var(--primary);
+	text-align: center;
+	padding: 12px 24px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.schoolName {
+	font-weight: 600;
+}
+
+.startend {
+	font-size: 14px;
+	display: flex;
+	gap: 2px;
+}
+
+.content {
+	padding: 24px;
+	display: flex;
+	align-items: center;
+	gap: 24px;
+}
+
+.course {
+	display: flex;
+	gap: 12px;
+	align-items: center;
+}
+
+.course i {
+	color: var(--primary);
+}
+
+.download {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	font-size: 14px;
+	padding: 10px 12px;
+	border: none;
+	background: var(--primary-med);
+	color: #fff;
+	border-radius: 4px;
+	cursor: pointer;
+	transition: all 0.25s ease-in-out;
+	margin-left: auto;
+}
+
+.download:hover {
+	background: var(--primary);
+}
+
+.download i {
+	color: #fff;
+	font-size: 16px;
+}
+
+@media screen and (max-width: 1080px) {
+	.course {
+		align-items: flex-start;
+	}
+	.course > i {
+		margin-top: 6px;
+	}
+	.content {
+		font-size: 14px;
+	}
+}
+
+@media screen and (max-width: 579px) {
+	.company {
+		flex-direction: column;
+	}
+	.startend {
+		flex-direction: column;
+		margin: auto;
+	}
+	.startend span:nth-child(2) {
+		display: none;
+	}
+	.course {
+		align-items: flex-start;
+	}
+	.course > i {
+		margin-top: 6px;
+	}
+	.content {
+		flex-direction: column;
+	}
+	.download {
+		width: 100%;
+		margin-left: 0px;
+		justify-content: center;
+	}
+}

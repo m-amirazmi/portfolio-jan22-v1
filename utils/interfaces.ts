@@ -89,3 +89,18 @@ export interface WorkI {
 	summary: string;
 	jobs: WorkExpI[];
 }
+
+export interface SchoolI {
+	id: string;
+	course: string;
+	name: string;
+	grade: string;
+	start: string;
+	end: string;
+	cert: string;
+}
+
+export interface EduI {
+	summary: string;
+	schools: SchoolI[];
+}

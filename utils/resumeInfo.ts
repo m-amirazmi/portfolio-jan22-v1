@@ -1,4 +1,4 @@
-import { WorkI } from "./interfaces";
+import { EduI, WorkI } from "./interfaces";
 
 export const experiences: WorkI = {
 	summary: "I have started working professionally as Frontend Developer since June 2020. From knowing nothing about Web Development until becoming a full fledged Frontend Developer.",
@@ -66,6 +66,30 @@ export const experiences: WorkI = {
 					ex: "eg: Manual Input, Job Calendar, Microservices",
 				},
 			],
+		},
+	],
+};
+
+export const educations: EduI = {
+	summary: "",
+	schools: [
+		{
+			id: "1",
+			course: "Bachelor in Electronics Engineering Technology",
+			name: "University Kuala Lumpur British Malaysian Institute",
+			grade: "3.06",
+			start: "Jan 2015",
+			end: "June 2019",
+			cert: "/documents/bachelor.pdf",
+		},
+		{
+			id: "2",
+			course: "Diploma in Electrical and Electronics Engineering Technology",
+			name: "University Kuala Lumpur British Malaysian Institute",
+			grade: "3.57",
+			start: "Jan 2013",
+			end: "Dec 2015",
+			cert: "/documents/diploma.pdf",
 		},
 	],
 };

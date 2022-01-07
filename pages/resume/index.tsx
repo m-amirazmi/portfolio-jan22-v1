@@ -1,11 +1,11 @@
-import React from "react";
 import WorkExp from "../../components/workexp";
 import PageBack from "../../components/pageback";
 import PageTitle from "../../components/pagetitle";
 import Section from "../../components/section";
 import { PagePropsI } from "../../utils/interfaces";
-import { experiences } from "../../utils/resumeInfo";
+import { educations, experiences } from "../../utils/resumeInfo";
 import styles from "./Resume.module.css";
+import Education from "../../components/education";
 
 export default function Resume({ pageInfo }: PagePropsI) {
 	const renderExperience = () => (
@@ -22,9 +22,8 @@ export default function Resume({ pageInfo }: PagePropsI) {
 	const renderEducations = () => (
 		<Section pageInfo={pageInfo} name="My Educational Background">
 			<div>
-				<p className={styles.workExperienceSummary}>{experiences.summary}</p>
-				{experiences.jobs.map((exp) => (
-					<WorkExp key={exp.id} {...exp} />
+				{educations.schools.map((ed) => (
+					<Education key={ed.id} {...ed} />
 				))}
 			</div>
 		</Section>
